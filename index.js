@@ -10,7 +10,7 @@ const port = 3000;
 app.use(cors());
 
 app.get("/api", (req, res) => res.json(filmes));
-app.get("/api/mensagens", (req, res) =>
+app.get("/api/motivational", (req, res) =>
   res.json({ mensagen: fraseAleatoria() })
 );
 
