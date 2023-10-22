@@ -10,8 +10,8 @@ const port = 3000;
 app.use(cors());
 
 app.get("/api", (req, res) => res.json(filmes));
-app.get("/api/motivational", (req, res) =>
-  res.json({ mensagen: fraseAleatoria() })
+app.get("/api/mensagem", (req, res) =>
+  res.json({ mensagem: fraseAleatoria() })
 );
 
 app.listen(port, () => console.log("Servidor rodando na porta " + port));
